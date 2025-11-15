@@ -25,7 +25,7 @@ public class ExplosionChaosEvent implements ChaosEvent {
 		double offsetY = random.nextDouble() * 3;
 		double offsetZ = (random.nextDouble() - 0.5) * 10;
 
-		BlockPos pos = targetPlayer.getBlockPos().add(offsetX, offsetY, offsetZ);
+		BlockPos pos = targetPlayer.getBlockPos().add((int)offsetX, (int)offsetY, (int)offsetZ);
 
 		float power = 1.0f + random.nextFloat() * ChaosMod.getConfig().explosionRadius;
 

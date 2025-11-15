@@ -24,7 +24,7 @@ public class LightningChaosEvent implements ChaosEvent {
 		double offsetX = (random.nextDouble() - 0.5) * 15;
 		double offsetZ = (random.nextDouble() - 0.5) * 15;
 
-		BlockPos pos = targetPlayer.getBlockPos().add(offsetX, 0, offsetZ);
+		BlockPos pos = targetPlayer.getBlockPos().add((int)offsetX, 0, (int)offsetZ);
 		pos = world.getTopPosition(net.minecraft.world.Heightmap.Type.MOTION_BLOCKING, pos);
 
 		LightningEntity lightning = EntityType.LIGHTNING_BOLT.create(world);

@@ -44,7 +44,7 @@ public class MobSpawnChaosEvent implements ChaosEvent {
 			double offsetX = (random.nextDouble() - 0.5) * 20;
 			double offsetZ = (random.nextDouble() - 0.5) * 20;
 
-			BlockPos spawnPos = targetPlayer.getBlockPos().add(offsetX, 0, offsetZ);
+			BlockPos spawnPos = targetPlayer.getBlockPos().add((int)offsetX, 0, (int)offsetZ);
 			spawnPos = world.getTopPosition(net.minecraft.world.Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, spawnPos);
 
 			try {
