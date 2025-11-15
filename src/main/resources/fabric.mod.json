@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "highland-mod",
+  "version": "${version}",
+  "name": "Highland Chaos",
+  "description": "A Yoshi's Highland inspired randomizer",
+  "authors": [
+    "Hyeve",
+    "sipacid"
+  ],
+  "contact": {
+    "website": "https://modrinth.com/mod/highland-chaos",
+    "repo": "https://github.com/Hyeve-jrs/HighlandChaos"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/highland/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pet.blahaj.highlandmod.Highland"
+    ]
+  },
+  "mixins": [
+    "highland-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
