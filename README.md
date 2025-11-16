@@ -1,6 +1,6 @@
 # Chaos Mod
 
-A server-side only Fabric mod for Minecraft 1.21.1 that adds random chaos events to your multiplayer server!
+A server-side only Fabric mod for Minecraft 1.21.4 that adds random chaos events to your multiplayer server!
 
 ## Features
 
@@ -29,9 +29,9 @@ Default settings (configurable in `ChaosConfig.java`):
 
 ### Requirements
 
-- Minecraft 1.21.1
+- Minecraft 1.21.4
 - Fabric Loader 0.16.9 or higher
-- Fabric API 0.107.0 or higher
+- Fabric API 0.110.5 or higher
 - Java 21 or higher
 
 ### Server Installation
